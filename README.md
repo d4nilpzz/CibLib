@@ -1,4 +1,4 @@
-# Creative Inventory Banner
+# Cib Lib
 
 A Fabric library that lets any mod split its creative tab into **sections**, each one headed by its
 own banner.
