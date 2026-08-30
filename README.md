@@ -439,6 +439,3 @@ InventoryBanners.register(TAB_TWO, shared);
 
 ---
 
-## License
-
-All Rights Reserved.
