@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cib",
+  "version": "${version}",
+  "name": "Cib Lib",
+  "description": "Library that lets any mod split its creative tab into sections with a custom banner.",
+  "authors": [
+    "d4nilpzz"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.d4nilpzz.cib.client.CibDataGenerator"
+    ],
+    "client": [
+      "dev.d4nilpzz.cib.client.CibClient"
+    ],
+    "main": [
+      "dev.d4nilpzz.cib.Cib"
+    ]
+  },
+  "mixins": [
+    "cib.mixins.json",
+    {
+      "config": "cib.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
